@@ -63,7 +63,7 @@ extension MSBlutoothCentral{
         sleepTimer = Timer.scheduledTimer(withTimeInterval: Double(sleep + duration), repeats: true, block: { [weak self](timer) in
             self?.doScan(Duration: duration,  FindHandle: findHandle, CompleteHandle: completeHandle)
         })
-        RunLoop.current.add(sleepTimer!, forMode: .common)
+        RunLoop.current.add(sleepTimer!, forMode: RunLoop.Mode.common)
         sleepTimer?.fire()
     }
     

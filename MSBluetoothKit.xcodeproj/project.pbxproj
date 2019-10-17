@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6ECCBC1A2358633200E21315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECCBC192358633200E21315 /* AppDelegate.swift */; };
-		6ECCBC1C2358633200E21315 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECCBC1B2358633200E21315 /* SceneDelegate.swift */; };
 		6ECCBC1E2358633200E21315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECCBC1D2358633200E21315 /* ViewController.swift */; };
 		6ECCBC212358633200E21315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCBC1F2358633200E21315 /* Main.storyboard */; };
 		6ECCBC232358633300E21315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCBC222358633300E21315 /* Assets.xcassets */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		6ECCBC162358633200E21315 /* MSBluetoothKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSBluetoothKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECCBC192358633200E21315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6ECCBC1B2358633200E21315 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6ECCBC1D2358633200E21315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6ECCBC202358633200E21315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6ECCBC222358633300E21315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 			children = (
 				6ECCBC3B235863C100E21315 /* Sources */,
 				6ECCBC192358633200E21315 /* AppDelegate.swift */,
-				6ECCBC1B2358633200E21315 /* SceneDelegate.swift */,
 				6ECCBC1D2358633200E21315 /* ViewController.swift */,
 				6ECCBC1F2358633200E21315 /* Main.storyboard */,
 				6ECCBC222358633300E21315 /* Assets.xcassets */,
@@ -225,7 +222,6 @@
 				6ECCBC41235863CE00E21315 /* MSPeripheral.swift in Sources */,
 				6ECCBC1A2358633200E21315 /* AppDelegate.swift in Sources */,
 				6ECCBC42235863CE00E21315 /* MSBluetoothConfig.swift in Sources */,
-				6ECCBC1C2358633200E21315 /* SceneDelegate.swift in Sources */,
 				6ECCBC43235863CE00E21315 /* MSBlutoothCentral.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,13 +385,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DARMSA99DW;
 				INFOPLIST_FILE = MSBluetoothKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-github.MSBluetoothKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -407,13 +404,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DARMSA99DW;
 				INFOPLIST_FILE = MSBluetoothKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-github.MSBluetoothKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
