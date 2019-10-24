@@ -64,13 +64,10 @@ extension MSPeripheral{
             return
         }
         var writeType : CBCharacteristicWriteType!
-        switch characteristic!.properties {
-        case .writeWithoutResponse:
+        if (characteristic!.properties.rawValue & CBCharacteristicProperties.writeWithoutResponse.rawValue) != 0 {
             writeType = .withoutResponse
-            break
-        default:
+        }else{
             writeType = .withResponse
-            break
         }
         rawPeripheral.writeValue(data, for: characteristic!, type: writeType)
     }
